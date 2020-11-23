@@ -7,11 +7,11 @@ public class TouristTicket extends Ticket {
                          String departureDate, String departureTime, String arrivalDate, String arrivalTime,
                          Passenger passenger,
                          int seatNo, float price, String status, float duration, boolean cancellation,
-                         String hotelAddress, String[] hotelLoc) {
+                         String hotelAddress, String hotelLoc) {
         super(pnrNumber, departureLoc, destinationLoc, flight, departureDate, departureTime,
                 arrivalDate, arrivalTime, passenger, seatNo, price, status, duration, cancellation);
         this.hotelAddress = hotelAddress;
-        this.hotelLoc = hotelLoc;
+        addLoc(hotelLoc);
     }
 
     public String getHotelAddress(){

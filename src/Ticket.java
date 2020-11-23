@@ -10,6 +10,10 @@ public abstract class Ticket {
     private String arrivalDate;
     private String arrivalTime;
 
+    public int getPnrNumber() {
+        return pnrNumber;
+    }
+
     public Ticket(int pnrNumber, String departureLoc, String destinationLoc, Flight flight,
                   String departureDate, String departureTime, String arrivalDate, String arrivalTime,
                   Passenger passenger, int seatNo, float price, String status,
