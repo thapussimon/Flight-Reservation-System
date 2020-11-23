@@ -9,6 +9,13 @@ public abstract class Ticket {
     private String departureTime;
     private String arrivalDate;
     private String arrivalTime;
+    
+     private Passenger passenger; //aggregation provided
+    private int seatNo;
+    private float price;
+    private String status;
+    private float duration;
+    private boolean cancellation;
 
     public int getPnrNumber() {
         return pnrNumber;
@@ -34,12 +41,7 @@ public abstract class Ticket {
         this.cancellation = cancellation;
     }
 
-    private Passenger passenger; //aggregation provided
-    private int seatNo;
-    private float price;
-    private String status;
-    private float duration;
-    private boolean cancellation;
+   
 
 
     public String checkStatus() {
