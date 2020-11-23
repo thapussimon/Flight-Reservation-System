@@ -1,11 +1,14 @@
 public class Flight {
-    public int flightNo;
-    public String airline;
-    public int capacity;
-    public int seatsBooked;
+    //Encapsulated attributes with the methods
+
+    private int flightNo;
+    private String airline;
+    private int capacity;
+    private int seatsBooked;
 
     public String flightDetails() {
-        return airline;
+        return Integer.toString(flightNo) + ", " + airline + ", " + capacity + ", " + Integer.toString(seatsBooked);
+
     }
 
     public boolean seatsAvailability() {

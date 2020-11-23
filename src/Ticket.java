@@ -1,18 +1,21 @@
 public class Ticket {
-    public int pnrNumber;
-    public String departureLoc;
-    public String destinationLoc;
-    public Flight flight;
-    public String departureDate;
-    public String departureTime;
-    public String arrivalDate;
-    public String arrivalTime;
-    public Passenger passenger;
-    public int seatNo;
-    public float price;
-    public String status;
-    public float duration;
-    public boolean cancellation;
+        //Encapsulated all the attributes to the methods
+    //Provided an aggregation relationship with the Passenger Class
+    private int pnrNumber;
+    private String departureLoc;
+    private String destinationLoc;
+    private Flight flight;
+    private String departureDate;
+    private String departureTime;
+    private String arrivalDate;
+    private String arrivalTime;
+
+    private Passenger passenger; //aggregation provided
+    private int seatNo;
+    private float price;
+    private String status;
+    private float duration;
+    private boolean cancellation;
 
 
     public String checkStatus(){
