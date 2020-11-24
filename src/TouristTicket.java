@@ -33,7 +33,7 @@ public class TouristTicket extends Ticket {
     public void removeLoc(String loc){
         String[] hl=new String[5];
         for (int i=0;i<hotelLoc.length;i++){
-            if (hotelLoc[i].equals(loc)){
+            if (hotelLoc[i]==loc){
                 pos--;
                 continue;
                 

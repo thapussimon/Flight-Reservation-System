@@ -23,8 +23,6 @@ public class Main {
         System.out.println(Arrays.toString(touristTicket.getHotelLoc()));
         touristTicket.addLoc("Madras");
         System.out.println(Arrays.toString(touristTicket.getHotelLoc()));
-        
-
 
     }
 
