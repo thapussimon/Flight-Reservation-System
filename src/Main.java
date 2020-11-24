@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         //This is for test purposes check for working
-        Flight flight=new Flight();
+        Flight flight=new Flight(22,"Chennai Airlines",100,50);
         System.out.println(flight.flightDetails());
         System.out.println(flight.seatsAvailability());
 
