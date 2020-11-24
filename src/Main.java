@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         //This is for test purposes check for working
@@ -16,6 +18,12 @@ public class Main {
                 12.0f,false,"vadodara road, Lal COmplex, CHennai","Tirunnelvenni");
         printTicketDetails(regularTicket);
         printTicketDetails(touristTicket);
+        System.out.println(Arrays.toString(touristTicket.getHotelLoc()));
+        touristTicket.removeLoc("Tirunnelvenni");
+        System.out.println(Arrays.toString(touristTicket.getHotelLoc()));
+        touristTicket.addLoc("Madras");
+        System.out.println(Arrays.toString(touristTicket.getHotelLoc()));
+        
 
 
     }

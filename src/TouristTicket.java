@@ -31,10 +31,14 @@ public class TouristTicket extends Ticket {
     //Remove hotel Loc
 
     public void removeLoc(String loc){
-        String[] hl=new String[4];
+        String[] hl=new String[5];
         for (int i=0;i<hotelLoc.length;i++){
-            if (hotelLoc[i].equals(loc))
+            if (hotelLoc[i]==loc){
+                pos--;
                 continue;
+                
+            }
+                
             for (int j=0;j< hl.length;j++){
                 hl[j]=hotelLoc[i];
             }
@@ -43,6 +47,8 @@ public class TouristTicket extends Ticket {
         for (int i=0;i< hl.length;i++){
             hotelLoc[i]=hl[i];
         }
+
+        
 
     }
 

@@ -17,6 +17,9 @@ public abstract class Ticket {
     private float duration;
     private boolean cancellation;
 
+   
+
+
     public int getPnrNumber() {
         return pnrNumber;
     }
